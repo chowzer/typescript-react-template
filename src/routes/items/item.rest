@@ -1,0 +1,26 @@
+### GET
+GET http://localhost:8000/items
+
+### Get one
+GET http://localhost:8000/items/5e0fcc4ac6b635287cfc680a
+
+### Create one
+POST http://localhost:8000/items
+Content-Type: application/json
+
+{
+    "name": "best item 3",
+    "price": 50
+}
+
+### Update One
+PATCH http://localhost:8000/items/5e0fcc4ac6b635287cfc680a
+Content-Type: application/json
+
+{
+    "name": "updated best item 5",
+    "price": 55
+}
+
+### Delete One
+DELETE http://localhost:8000/items/5e0e4495b8aa9da3cc4360fd

@@ -1,0 +1,28 @@
+### GET all 
+
+GET http://localhost:8000/users
+
+### GET one
+GET http://localhost:8000/users/5e12b70de1b9984a50e8b8ae
+
+### POST
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "firstName": "no email",
+    "lastName": "user",
+    "email": "second@user.com    "
+}
+### PATCH
+PATCH http://localhost:8000/users/5e1221ce94a8ed4171f14aa c
+Content-Type: application/json
+
+{
+    "firstName": "amazing 2",
+    "lastName": "name 2",
+    "email": "second@user.qa    "
+}
+
+### DELETE
+DELETE http://localhost:8000/users/5e12b70de1b9984a50e8b8ae
